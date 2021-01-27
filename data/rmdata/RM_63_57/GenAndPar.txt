@@ -1,0 +1,9 @@
+Punctured Reed-Muller codes parameters are 
+ m = 6 
+ r = 4 
+ n = 63 
+ k = 57 
+ Generator matrix row: 
+1 1 0 0 0 0 1 
+ Parity matrix row: 
+1 0 0 0 0 1 1 0 0 0 1 0 1 0 0 1 1 1 1 0 1 0 0 0 1 1 1 0 0 1 0 0 1 0 1 1 0 1 1 1 0 1 1 0 0 1 1 0 1 0 1 0 1 1 1 1 1 1 

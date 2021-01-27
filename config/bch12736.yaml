@@ -1,0 +1,39 @@
+para:
+  train_dataset_length : 1600000
+  test_dataset_length : 100000
+  train_batch_size: 160
+  test_batch_size: 10000
+  lr: 0.001
+  seed: 1
+  log_interval: 100
+  epoch_szie : 200
+
+  # Use in train validate data util
+  snr: 6
+
+  # Use in test_ber
+  snr_list: 1,2,3,4,5,6
+  Boosting_number_list: 1,2,3,4
+
+  # Use in test_list_decoding
+  Boosting_number: 50
+  list_size: 1,2,4,8,16,len(H[0])+1
+
+  data_type: "127_36"
+  logger_name: BCH{}_epoch=5_boosting=20
+  CUDA_VISIBLE_DEVICES: "0"
+  train_save_path: "./save/BCH_{}/BCH_{}_{}.pth"
+  test_model_path: ./save/BCH_{}/BCH_{}_5.pth
+
+data:
+  v_size: None # dont edit, will init
+  e_size: None # dont edit, will init
+  l_size: None # dont edit, will init
+  rate: None   # dont edit, will init
+  pos : None # dont edit, will init
+  H : None # dont edit, will init
+  G : None # dont edit, will init
+  perma: None # dont edit, will init
+  H_path: ./data/bchdata/BCH_{}/BCH_H_{}.txt
+  G_path: ./data/bchdata/BCH_{}/BCH_G_{}.txt
+  perma_path: ./data/bchdata/BCH_{}/GFpermutation.txt
