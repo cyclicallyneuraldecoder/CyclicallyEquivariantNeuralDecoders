@@ -75,6 +75,7 @@ To reproduce the performance of the model in our paper for BCH(63,45):
     Bit Error rate - [8.47E-02, 5.12E-02, 2.19E-02, 5.95E-03, 9.44E-04, 7.78E-05]
 
 4. Run ```python -m app.test_list_decoding bch6345``` to get the Frame Error Rate with list_decoding.
+
 | List size\SNR | 1        | 2        | 3        | 4        | 5        | 6        |
 | ------------- | -------- | -------- | -------- | -------- | -------- | -------- |
 | 1             | 7.64E-01 | 4.86E-01 | 2.03E-01 | 4.94E-02 | 6.27E-03 | 2.90E-04 |
