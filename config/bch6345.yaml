@@ -21,9 +21,9 @@ para:
 
   data_type: "63_45"
   logger_name: BCH{}_ber_epoch=10_2
-  CUDA_VISIBLE_DEVICES: "1"
+  CUDA_VISIBLE_DEVICES: "0"
   train_save_path: "./save/BCH_{}/BCH_{}_{}.pth"
-  test_model_path: ./save/BCH_{}/BCH_{}_10.pth
+  test_model_path: ./save/BCH_{}/BCH_{}_11.pth
 
 data:
   v_size: None # dont edit, will init
