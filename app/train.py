@@ -26,8 +26,7 @@ else:
 
 if torch.cuda.is_available():
     device = torch.device("cuda")
-    os.environ["CUDA_VISIBLE_DEVICES"] = "1"
-    # conf["para"]["CUDA_VISIBLE_DEVICES"]
+    os.environ["CUDA_VISIBLE_DEVICES"] = conf["para"]["CUDA_VISIBLE_DEVICES"]
     print(device,os.environ["CUDA_VISIBLE_DEVICES"])
 else:
     device = torch.device("cpu")
