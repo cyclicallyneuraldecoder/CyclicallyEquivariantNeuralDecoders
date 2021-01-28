@@ -69,12 +69,16 @@ To reproduce the performance of the model in our paper for BCH(63,45):
 
 2. Train with GPU. For 30 minutes of training with 1080Ti 11GB GPU (or for 10 minutes of training with 3090Ti 32GB), around epoch 11 you should get the model in save
 
-3. Run ```python -m app.testber bch6345``` to get test Bit Error Rate results
+3. Run ```python -m app.testber bch6345``` to get the BCH(63,45) Bit Error Rate results
 
-    SNR range in [dB] - [1.0, 2.0, 3.0, 4.0, 5.0, 6.0]  
-    BER - [8.47E-02, 5.12E-02, 2.19E-02, 5.95E-03, 9.44E-04, 7.78E-05]
+| Boosting number\SNR | 1        | 2        | 3        | 4        | 5        | 6        |
+| ------------------- | -------- | -------- | -------- | -------- | -------- | -------- |
+| 0                   | 8.47E-02 | 5.12E-02 | 2.19E-02 | 5.95E-03 | 9.44E-04 | 7.78E-05 |
+| 1                   | 8.38E-02 | 4.91E-02 | 1.98E-02 | 4.83E-03 | 6.48E-04 | 3.73E-05 |
+| 2                   | 8.48E-02 | 4.94E-02 | 1.95E-02 | 4.57E-03 | 5.81E-04 | 2.89E-05 |
 
-4. Run ```python -m app.test_list_decoding bch6345``` to get the Frame Error Rate with list_decoding.
+
+4. Run ```python -m app.test_list_decoding bch6345``` to get the BCH(63,45) Frame Error Rate with list_decoding.
 
 | List size\SNR | 1        | 2        | 3        | 4        | 5        | 6        |
 | ------------- | -------- | -------- | -------- | -------- | -------- | -------- |
