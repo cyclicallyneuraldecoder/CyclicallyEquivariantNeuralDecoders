@@ -13,7 +13,7 @@ para:
 
   # Use in test_ber
   snr_list: 1,2,3,4,5,6
-  Boosting_number_list: 1,2,3,4
+  Boosting_number_list: 1,2,3
 
   # Use in test_list_decoding
   Boosting_number : 20
