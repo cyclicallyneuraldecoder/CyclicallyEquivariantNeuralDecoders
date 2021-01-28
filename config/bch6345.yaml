@@ -16,8 +16,8 @@ para:
   Boosting_number_list: 1,2,3,4
 
   # Use in test_list_decoding
-  Boosting_number: 1
-  list_size: "1"
+  Boosting_number: 20
+  list_size: 1,2,4,8,16,len(H[0])+1
 
   data_type: "63_45"
   logger_name: BCH{}_ber_epoch=10_2
