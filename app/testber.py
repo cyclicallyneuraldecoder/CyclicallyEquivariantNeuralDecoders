@@ -59,7 +59,7 @@ def test(model, device, test_loader, para, Boosting_number):
             BER_total.append(BER)
         BER = torch.mean(torch.tensor(BER_total))
         snr = para["snr"]
-        logger.warning(f"SNR={snr},Boosting_num={Boosting_number},BER={BER:.7f}")
+        logger.warning(f"SNR={snr},Boosting_num={int(Boosting_number)-1},BER={BER:.7f}")
 
 
 if __name__ == "__main__":
