@@ -67,7 +67,7 @@ To reproduce the performance of the model in our paper for BCH(63,45):
 
 1. Run ```python -m app.train bch6345``` (bch6345 is the config name for BCH(63,45). Change it to other names for other codes)
 
-2. Train with GPU. For 30 minutes of training with 1080Ti 11GB GPU (or for 10 minutes of training with 3090Ti 32GB), around epoch 10 you should get the model in save
+2. Train with GPU. For 30 minutes of training with 1080Ti 11GB GPU (or for 10 minutes of training with 3090Ti 32GB), around epoch 11 you should get the model in save
 
 3. Run ```python -m app.testber bch6345``` to get test Bit Error Rate results
 
