@@ -52,7 +52,6 @@ def train(model, device, train_loader, para, conf, epoch, criterion):
 def test(model, device, test_loader, para,epoch):
     model = model.to(device)
     model.eval()
-    FER_total = torch.zeros(len(test_loader))
     BER_total = torch.zeros(len(test_loader))
     with torch.no_grad():
         for batch_idx, (data, target) in enumerate(test_loader):
@@ -66,16 +65,12 @@ def test(model, device, test_loader, para,epoch):
             word_target = word_target.cuda()
             codeword_equal = (torch.sum(bool_equal, -1).cuda()
                               == word_target).to(torch.float)
-            FER = 1 - torch.sum(codeword_equal) / \
-                conf["para"]["test_batch_size"]
             BER = 1 - (torch.sum(bool_equal) /
                        (results.shape[0] * results.shape[1]))
-            FER_total[batch_idx] = FER
             BER_total[batch_idx] = BER
-        FER = torch.mean(FER_total)
         BER = torch.mean(BER_total)
         snr = para["snr"]
-        logger.warning(f"Epoch={epoch},SNR={snr},BER={BER:.7f},FER={FER:.7f}")
+        logger.warning(f"Epoch={epoch},SNR={snr},BER={BER:.7f}")
 
 
 if __name__ == "__main__":
