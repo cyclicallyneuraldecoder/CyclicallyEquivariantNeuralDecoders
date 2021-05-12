@@ -1,8 +1,8 @@
-# Cyclically Equivariant Neural Decoder
-
-An implementation of Cyclically Equivariant Neural Decoders described in "Cyclically Equivariant Neural Decoders for Cyclic Codes" (Pytorch implementation) 
+# Cyclically Equivariant Neural Decoders for Cyclic Codes
 
 ### Xiangyu Chen, Min Ye 
+
+An implementation of Cyclically Equivariant Neural Decoders described in "Cyclically Equivariant Neural Decoders for Cyclic Codes" (Pytorch implementation) 
 
 ## Abstract
 
