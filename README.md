@@ -2,7 +2,7 @@
 
 ### Xiangyu Chen, Min Ye 
 
-An implementation of Cyclically Equivariant Neural Decoders described in "Cyclically Equivariant Neural Decoders for Cyclic Codes" (Pytorch implementation) 
+An implementation of Cyclically Equivariant Neural Decoders described in "Cyclically Equivariant Neural Decoders for Cyclic Codes(https://arxiv.org/abs/2105.05540)" (Pytorch implementation) 
 
 ## Abstract
 
